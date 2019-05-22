@@ -1,14 +1,12 @@
 <?php
 namespace Qeto;
 
-use Qeto\QetoQueryInterface;
-
 class QueryCaller
 {
     protected $queryModel;
     protected $functionName = '';
 
-    public function __construct(QetoQueryInterface $queryModel)
+    public function __construct($queryModel)
     {
         $this->queryModel = $queryModel;
     }
@@ -32,10 +30,10 @@ class QueryCaller
 
     /**
      * Query Model Mutator
-     * @param QetoQueryInterface $queryModel
+     * @param $queryModel
      * @return void
      */
-    private function setQueryModel(QetoQueryInterface $queryModel): void
+    private function setQueryModel($queryModel): void
     {
         $this->queryModel = $queryModel;
     }
@@ -48,7 +46,7 @@ class QueryCaller
     {
         $name = preg_split('/(?=[A-Z])/', $name);
         if (count($name) < 2 || !$qModel = $this->checkForSubClass($name[0])) {
-            return;
+            return $this->queryModel;
         }
         unset($name[0]);
         $this->functionName = lcfirst(implode('', $name));

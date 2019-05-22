@@ -4,7 +4,7 @@ namespace Qeto;
 
 use Qeto\QueryCaller;
 
-trait QetoQueryTrait
+trait QueryTrait
 {
     /**
      * Returns the raw sql string based on the query model for the name provided
