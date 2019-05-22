@@ -1,5 +1,5 @@
 {
-    "name": "dgillette25/qeto",
+    "name": "dgillette/qeto",
     "type": "library",
     "description": "Query builder for models and entities.",
     "keywords": ["laravel","queries","scopes","php","eloquent"],

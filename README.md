@@ -2,9 +2,6 @@
 
 *built by DanoDev*
 
-https://twitter.com/danodev
-
-http://danogillette.com
 
 ##Purpose
 Single manageable location for creating query where scopes. Originally they were being put into each table model as [Laravel scopes](https://laravel.com/docs/5.0/eloquent#query-scopes) for Eloquent queries. We then had to build out specific queries for other locations cause the scopes were just Laravel specific. These queries are a location where you can create the query using raw sql along with parameters to build out sql queries using any ORM or raw sql.
@@ -57,3 +54,8 @@ Adding all queries to one file would make for a very bloated class. So you can a
 User::qWhere('typeByUsername', 'danodev')->get();
 ```
 
+Contact me:
+
+https://twitter.com/danodev
+
+http://danogillette.com
