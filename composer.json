@@ -11,5 +11,10 @@
             "homepage": "http://danogillette.com",
             "role": "Developer"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {
+            "Qeto": "src/"
+        }
+    }
 }
