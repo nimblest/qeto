@@ -1,0 +1,15 @@
+{
+    "name": "dgillette25/qeto",
+    "type": "library",
+    "description": "Query builder for models and entities.",
+    "keywords": ["laravel","queries","scopes","php","eloquent"],
+    "homepage": "http://danogillette.com",
+    "authors": [
+        {
+            "name": "Dano Gillette",
+            "email": "dgillette25@gmail.com",
+            "homepage": "http://danogillette.com",
+            "role": "Developer"
+        }
+    ],
+}
