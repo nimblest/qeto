@@ -2,6 +2,9 @@
 
 *built by DanoDev*
 
+https://twitter.com/danodev
+http://danogillette.com
+
 ##Purpose
 Single manageable location for creating query where scopes. Originally they were being put into each table model as [Laravel scopes](https://laravel.com/docs/5.0/eloquent#query-scopes) for Eloquent queries. We then had to build out specific queries for other locations cause the scopes were just Laravel specific. These queries are a location where you can create the query using raw sql along with parameters to build out sql queries using any ORM or raw sql.
 
@@ -41,7 +44,7 @@ Now calling the `qWhereRawInverse` function it will get the inverse of the byUse
 To use as an eloquent scope you just call the function just as you would a scope, but you won't call the raw version
 
 ```
-user::qWhere('byUsername', 'BB')->get();
+User::qWhere('byUsername', 'danodev')->get();
 ```
 
 This allows you to append other scopes and use other eloquent methods with it.
@@ -50,6 +53,6 @@ This allows you to append other scopes and use other eloquent methods with it.
 Adding all queries to one file would make for a very bloated class. So you can add child classes off the main one within a file that is namespaced after the parent. For example, let's say we want to move the user types to their own file they are a child of the user class. So you would make a `App\Queries\User` folder and create a new file `userTypeQueries.php` with a same named class and extending the UserQueries class. So now let's say we move the `byUsername` function over to the UserTypeQueries class. To call that class you put the name of the file as the first part of the camel cased function you declare in the qWhere.
 
 ```
-User::qWhere('typeByUsername', 'danoDev')->get();
+User::qWhere('typeByUsername', 'danodev')->get();
 ```
 
