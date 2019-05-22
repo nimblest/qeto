@@ -17,7 +17,7 @@ class QueryCaller
      * @param string $parameter
      * @return array
      */
-    public function call(string $name, string $parameter): array
+    public function call(string $name, $parameter): array
     {
         $prepared = [];
         $this->functionName = $name;
