@@ -4,6 +4,12 @@
     "description": "Query builder for models and entities.",
     "keywords": ["laravel","queries","scopes","php","eloquent"],
     "homepage": "http://danogillette.com",
+    "require": {
+        "php": "^7.1"
+    },
+    "suggest": {
+        "laravel/framework": "Makes use of the laravel eloquent scopes."
+    },
     "authors": [
         {
             "name": "Dano Gillette",
