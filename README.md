@@ -10,7 +10,7 @@ Single manageable location for creating query where scopes. Originally they were
 First you will want to add the **Qeto\QueryTrait** on any of your table models that you want to query on. This will connect the query to the correct folder structure. Let's say we are using `App\User` and have included the trait. Then add the protected variable `$name` to be the name of the class.
 
 ```
-$var = 'User';
+public $name = 'User';
 ```
 
 That file then connects to a created file (in our case we already have it created)`App\Queries\UserQueries.php`. First you will have to extend in your `App\User` file the `Qeto\BaseQuery` class. Once that has been added you can start to add any query scope you want. Let's add the query `byUsername` that queries the users by the username field.
