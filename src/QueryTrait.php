@@ -42,7 +42,7 @@ trait QueryTrait
     public function scopeQWhere($query, string $name, $parameter = '')
     {
         $parameters = self::qWhereRaw($name, $parameter);
-        return $query->whereRaw($parameters['string'], $parameters['bindings']);
+        return $query->whereRaw($parameters['sql'], $parameters['bindings']);
     }
 
     /**
@@ -55,7 +55,7 @@ trait QueryTrait
     public function scopeQIWhere($query, string $name, $parameter = '')
     {
         $parameters = self::qWhereRawInverse($name, $parameter);
-        return $query->whereRaw($parameters['string'], $parameters['bindings']);
+        return $query->whereRaw($parameters['sql'], $parameters['bindings']);
     }
 
     /**
