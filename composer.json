@@ -5,7 +5,7 @@
     "keywords": ["laravel","queries","scopes","php","eloquent"],
     "homepage": "http://danogillette.com",
     "require": {
-        "php": "^7.1"
+        "php": "^8.2"
     },
     "suggest": {
         "laravel/framework": "Makes use of the laravel eloquent scopes."
